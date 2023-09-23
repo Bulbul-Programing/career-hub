@@ -3,11 +3,13 @@ import Rote from "../Component/Rote/Rote";
 import Home from "../Component/Home/Home";
 import ShowDetail from "../Component/ShowDetail/ShowDetail";
 import AppliedJob from "../Component/AppliedJob/AppliedJob";
+import ErrorElement from "../Component/ErrorElement/ErrorElement";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Rote></Rote>,
+      errorElement: <ErrorElement></ErrorElement>,
       children:[
         {
             path:'/',
